@@ -1,26 +1,26 @@
 [
 {
   "directory": "D:\\code\\AP-1400\\AP1400-2-HW2",
-  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\compile.hw2.pdb", "/Od", "/std:c++20", "/Iinclude", "/EHsc", "/IC:\\Users\\wzcin\\AppData\\Local\\.xmake\\packages\\g\\gtest\\1.12.1\\188944e346694ce89eb8bc3d2f0b7138\\include", "/IC:\\Users\\wzcin\\AppData\\Local\\.xmake\\packages\\o\\openssl3\\3.0.7\\421d9f3b91a54b90a33581219a40cd0d\\include", "/Fobuild\\.objs\\hw2\\windows\\x64\\debug\\src\\client.cpp.obj", "src\\client.cpp"],
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\compile.hw2.pdb", "/Od", "/std:c++20", "/Iinclude", "/EHsc", "/IC:\\Users\\wzcin\\AppData\\Local\\.xmake\\packages\\g\\gtest\\1.12.1\\188944e346694ce89eb8bc3d2f0b7138\\include", "/IC:\\Users\\wzcin\\AppData\\Local\\.xmake\\packages\\o\\openssl\\1.1.1-t\\9458079689e342b58f2f2e8d4b2fb860\\include", "/Fobuild\\.objs\\hw2\\windows\\x64\\debug\\src\\client.cpp.obj", "src\\client.cpp"],
   "file": "src\\client.cpp"
 },
 {
   "directory": "D:\\code\\AP-1400\\AP1400-2-HW2",
-  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\compile.hw2.pdb", "/Od", "/std:c++20", "/Iinclude", "/EHsc", "/IC:\\Users\\wzcin\\AppData\\Local\\.xmake\\packages\\g\\gtest\\1.12.1\\188944e346694ce89eb8bc3d2f0b7138\\include", "/IC:\\Users\\wzcin\\AppData\\Local\\.xmake\\packages\\o\\openssl3\\3.0.7\\421d9f3b91a54b90a33581219a40cd0d\\include", "/Fobuild\\.objs\\hw2\\windows\\x64\\debug\\src\\crypto.cpp.obj", "src\\crypto.cpp"],
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\compile.hw2.pdb", "/Od", "/std:c++20", "/Iinclude", "/EHsc", "/IC:\\Users\\wzcin\\AppData\\Local\\.xmake\\packages\\g\\gtest\\1.12.1\\188944e346694ce89eb8bc3d2f0b7138\\include", "/IC:\\Users\\wzcin\\AppData\\Local\\.xmake\\packages\\o\\openssl\\1.1.1-t\\9458079689e342b58f2f2e8d4b2fb860\\include", "/Fobuild\\.objs\\hw2\\windows\\x64\\debug\\src\\crypto.cpp.obj", "src\\crypto.cpp"],
   "file": "src\\crypto.cpp"
 },
 {
   "directory": "D:\\code\\AP-1400\\AP1400-2-HW2",
-  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\compile.hw2.pdb", "/Od", "/std:c++20", "/Iinclude", "/EHsc", "/IC:\\Users\\wzcin\\AppData\\Local\\.xmake\\packages\\g\\gtest\\1.12.1\\188944e346694ce89eb8bc3d2f0b7138\\include", "/IC:\\Users\\wzcin\\AppData\\Local\\.xmake\\packages\\o\\openssl3\\3.0.7\\421d9f3b91a54b90a33581219a40cd0d\\include", "/Fobuild\\.objs\\hw2\\windows\\x64\\debug\\src\\main.cpp.obj", "src\\main.cpp"],
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\compile.hw2.pdb", "/Od", "/std:c++20", "/Iinclude", "/EHsc", "/IC:\\Users\\wzcin\\AppData\\Local\\.xmake\\packages\\g\\gtest\\1.12.1\\188944e346694ce89eb8bc3d2f0b7138\\include", "/IC:\\Users\\wzcin\\AppData\\Local\\.xmake\\packages\\o\\openssl\\1.1.1-t\\9458079689e342b58f2f2e8d4b2fb860\\include", "/Fobuild\\.objs\\hw2\\windows\\x64\\debug\\src\\main.cpp.obj", "src\\main.cpp"],
   "file": "src\\main.cpp"
 },
 {
   "directory": "D:\\code\\AP-1400\\AP1400-2-HW2",
-  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\compile.hw2.pdb", "/Od", "/std:c++20", "/Iinclude", "/EHsc", "/IC:\\Users\\wzcin\\AppData\\Local\\.xmake\\packages\\g\\gtest\\1.12.1\\188944e346694ce89eb8bc3d2f0b7138\\include", "/IC:\\Users\\wzcin\\AppData\\Local\\.xmake\\packages\\o\\openssl3\\3.0.7\\421d9f3b91a54b90a33581219a40cd0d\\include", "/Fobuild\\.objs\\hw2\\windows\\x64\\debug\\src\\server.cpp.obj", "src\\server.cpp"],
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\compile.hw2.pdb", "/Od", "/std:c++20", "/Iinclude", "/EHsc", "/IC:\\Users\\wzcin\\AppData\\Local\\.xmake\\packages\\g\\gtest\\1.12.1\\188944e346694ce89eb8bc3d2f0b7138\\include", "/IC:\\Users\\wzcin\\AppData\\Local\\.xmake\\packages\\o\\openssl\\1.1.1-t\\9458079689e342b58f2f2e8d4b2fb860\\include", "/Fobuild\\.objs\\hw2\\windows\\x64\\debug\\src\\server.cpp.obj", "src\\server.cpp"],
   "file": "src\\server.cpp"
 },
 {
   "directory": "D:\\code\\AP-1400\\AP1400-2-HW2",
-  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\compile.hw2.pdb", "/Od", "/std:c++20", "/Iinclude", "/EHsc", "/IC:\\Users\\wzcin\\AppData\\Local\\.xmake\\packages\\g\\gtest\\1.12.1\\188944e346694ce89eb8bc3d2f0b7138\\include", "/IC:\\Users\\wzcin\\AppData\\Local\\.xmake\\packages\\o\\openssl3\\3.0.7\\421d9f3b91a54b90a33581219a40cd0d\\include", "/Fobuild\\.objs\\hw2\\windows\\x64\\debug\\src\\unit_test.cpp.obj", "src\\unit_test.cpp"],
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\compile.hw2.pdb", "/Od", "/std:c++20", "/Iinclude", "/EHsc", "/IC:\\Users\\wzcin\\AppData\\Local\\.xmake\\packages\\g\\gtest\\1.12.1\\188944e346694ce89eb8bc3d2f0b7138\\include", "/IC:\\Users\\wzcin\\AppData\\Local\\.xmake\\packages\\o\\openssl\\1.1.1-t\\9458079689e342b58f2f2e8d4b2fb860\\include", "/Fobuild\\.objs\\hw2\\windows\\x64\\debug\\src\\unit_test.cpp.obj", "src\\unit_test.cpp"],
   "file": "src\\unit_test.cpp"
 }]

@@ -1,6 +1,7 @@
 
 #include "gtest/gtest.h"
 #include "gmock/gmock.h"
+#include <vector>
 #include "server.h"
 #include "client.h"
 
@@ -107,29 +108,33 @@ TEST(HW1Test, TEST13) {
 
 TEST(HW1Test, TEST14) {
     Server server{};
-    pending_trxs.clear();
+    // pending_trxs.clear();
     auto bryan{server.add_client("bryan")};
     auto clint{server.add_client("clint")};
     auto sarah{server.add_client("sarah")};
     EXPECT_TRUE(bryan->transfer_money("clint", 1));
     EXPECT_TRUE(clint->transfer_money("sarah", 2.5));
     EXPECT_TRUE(sarah->transfer_money("bryan", 0.5));
-
-    std::cout  <<  std::string(20, '*') <<  std::endl;
-    for(const  auto& trx : pending_trxs)
-        std::cout << trx <<  std::endl;
-    std::cout  <<  std::string(20, '*') <<  std::endl;
+    
+    show_pending_transactions();
+    // std::cout  <<  std::string(20, '*') <<  std::endl;
+    // for(const  auto& trx : pending_trxs)
+    //     std::cout << trx <<  std::endl;
+    // std::cout  <<  std::string(20, '*') <<  std::endl;
 }
-
+*/
 TEST(HW1Test, TEST15) {
     Server server{};
-    pending_trxs.clear();
+    // pending_trxs.clear();
+
     auto bryan{server.add_client("bryan")};
     auto clint{server.add_client("clint")};
     auto sarah{server.add_client("sarah")};
     EXPECT_TRUE(bryan->transfer_money("clint", 1));
     EXPECT_TRUE(clint->transfer_money("sarah", 2.5));
     EXPECT_TRUE(sarah->transfer_money("bryan", 0.5));
+
+    std::vector<std::string> pending_trxs=return_pending_trxs();
 
     std::string mempool{};
     for(const auto& trx : pending_trxs)
@@ -139,14 +144,18 @@ TEST(HW1Test, TEST15) {
     size_t nonce{server.mine()};
     show_wallets(server);
 
+    std::cout<<"mem: "<<mempool<<std::endl;
+    std::cout<<"mem+nonce: "<<mempool + std::to_string(nonce)<<std::endl;
     std::string hash = crypto::sha256(mempool + std::to_string(nonce));
+    
+    std::cout<<hash<<std::endl;
     EXPECT_TRUE(hash.substr(0, 10).find("000") != std::string::npos);
     // MINER is: sarah || bryan || clint
     EXPECT_TRUE(bryan->get_wallet()==4.5 || bryan->get_wallet()==10.75 || bryan->get_wallet()==4.5);
     EXPECT_TRUE(clint->get_wallet()==3.5 ||clint->get_wallet()==3.5 ||clint->get_wallet()==9.75);
     EXPECT_TRUE(sarah->get_wallet()==13.25 || sarah->get_wallet()==7 || sarah->get_wallet()==7);
 }
-*/
+
 
 
 
