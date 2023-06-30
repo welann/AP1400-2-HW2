@@ -29,7 +29,7 @@ void show_wallets(const Server& server)
     std::cout << std::string(20, '*') << std::endl;
 }
 
-Server::Server() { }
+Server::Server() { pending_trxs.clear(); }//每次初始化要记得清理，否则会影响其他的测试样例
 
 std::shared_ptr<Client> Server::add_client(std::string id)
 {
@@ -109,26 +109,23 @@ size_t Server::mine()
     while (!mined) {
         for (auto client : clients) {
             nonce = client.first->generate_nonce();
-
             auto tempstr = mempool + std::to_string(nonce);
             std::string hash { crypto::sha256(tempstr) };
-            // std::cout << hash << std::endl;
-            // std::cout << std::endl;
 
             if (hash.substr(0, 10).find("000") != std::string::npos) {
-                std::cout << "expected: " << tempstr << std::endl;
+                // std::cout << "expected: " << tempstr << std::endl;
 
-                std::cout << "expected: " << hash << std::endl;
-                std::cout << "expected1: " << nonce << std::endl;
+                // std::cout << "expected: " << hash << std::endl;
+                // std::cout << "expected1: " << nonce << std::endl;
                 mined = true;
                 miner = client.first;
+                break;
             }
         }
     }
+    // std::cout << "expected2: " << nonce << std::endl;
 
-    // auto miner_client = get_client(miner);
     clients[miner] += 6.25;
-
     for (auto trx : pending_trxs) {
         // std::cout << trx << std::endl;
         std::string sender {}, receiver {};
@@ -141,6 +138,5 @@ size_t Server::mine()
         clients[client1] -= value;
         clients[client2] += value;
     }
-    std::cout << "expected2: " << nonce << std::endl;
     return nonce;
 }

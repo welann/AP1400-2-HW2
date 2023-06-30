@@ -5,7 +5,6 @@
 #include "server.h"
 #include "client.h"
 
-/*
 TEST(HW1Test, TEST1) {
     Server server{};
     auto bryan{server.add_client("bryan")};
@@ -122,9 +121,10 @@ TEST(HW1Test, TEST14) {
     //     std::cout << trx <<  std::endl;
     // std::cout  <<  std::string(20, '*') <<  std::endl;
 }
-*/
+
 TEST(HW1Test, TEST15) {
     Server server{};
+    // std::vector<std::string> pending_trxs=return_pending_trxs();
     // pending_trxs.clear();
 
     auto bryan{server.add_client("bryan")};
@@ -144,11 +144,10 @@ TEST(HW1Test, TEST15) {
     size_t nonce{server.mine()};
     show_wallets(server);
 
-    std::cout<<"mem: "<<mempool<<std::endl;
-    std::cout<<"mem+nonce: "<<mempool + std::to_string(nonce)<<std::endl;
+    // std::cout<<"mem: "<<mempool<<std::endl;
+    // std::cout<<"mem+nonce: "<<mempool + std::to_string(nonce)<<std::endl;
     std::string hash = crypto::sha256(mempool + std::to_string(nonce));
     
-    std::cout<<hash<<std::endl;
     EXPECT_TRUE(hash.substr(0, 10).find("000") != std::string::npos);
     // MINER is: sarah || bryan || clint
     EXPECT_TRUE(bryan->get_wallet()==4.5 || bryan->get_wallet()==10.75 || bryan->get_wallet()==4.5);
